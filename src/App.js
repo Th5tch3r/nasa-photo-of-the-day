@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
 
+import Welcome from "./components/Welcome.js";
+import PhotoCard from "./components/PhotoCard.js"
+
+
+
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      < Welcome />
+      <p className="rocket"> <span role="img">🚀</span></p>
+      < PhotoCard />
     </div>
   );
 }
