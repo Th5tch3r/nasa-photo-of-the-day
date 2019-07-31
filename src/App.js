@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 
-import Welcome from "./components/welcome";
+import Welcome from "./components/Welcome.js";
+import PhotoCard from "./components/PhotoCard"
 
 
 
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       < Welcome />
       <p className="rocket"> 🚀</p>
+      < PhotoCard />
     </div>
   );
 }

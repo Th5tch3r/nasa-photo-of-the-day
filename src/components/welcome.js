@@ -1,10 +1,9 @@
 import React from "react";
 
-
-const welcome = () => {
+const Welcome = () => {
     return (
         <h1>Astronomy Photo Of Today! </h1>
     );
 };
 
-export default welcome; 
+export default Welcome; 
