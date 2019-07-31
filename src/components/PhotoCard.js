@@ -7,10 +7,10 @@ export default function PhotoCard() {
     const [photos, setPhotos] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=DEMO_KEY`)
+        axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
             .then(res => {
             console.log(res.data);
-            setPhotos(res.data.photos)
+            setPhotos(res.data.url)
             })
             .catch(err => {
                 console.log(err);
@@ -19,7 +19,7 @@ export default function PhotoCard() {
 
     return (
     <div>
-        <img className="Frame" src={photos}/> 
+        <img className="Frame" src={photos} alt="img"/> 
     </div>
     )
 };
