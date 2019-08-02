@@ -34,11 +34,7 @@
 
 .rocket{
   font-size: 150px;
-  /* margin-top: 750px; */
+  margin-top: 300px;
   transform: rotate(-46deg)
 }
 
-.frame {
-  border: 2px solid black;
-  background: #61dafb;
-}
